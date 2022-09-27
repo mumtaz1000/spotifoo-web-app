@@ -1,0 +1,73 @@
+*,
+*::befor,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /* Colors */
+    --clr-black: #000;
+    --clr-greyDarkest: #121212;
+    --clr-greyDark: #242424;
+    --clr-greyLight: #a3a3a3;
+    --clr-white: #fff;
+    --clr-green: #1db954;
+}
+
+.Title,
+.Heading,
+.Subheading,
+.Paragraph {
+    font-family: "LatoBlack";
+    font-style: normal;
+}
+
+.Title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.Heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.Subheading {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.Paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.Body {
+    background-color: var(--clr-greyDarkest);
+    color: var(--clr-white);
+}
+
+.Navbar {
+    background-color: var(--clr-black);
+    height: 720px;
+    width: 200px;
+    left: 0px;
+    top: 0px;
+    border-radius: 0px;
+
+}
+
+.NavbarLogo {
+    height: 32px;
+    width: 117.33333587646484px;
+    left: 32px;
+    top: 32px;
+    border-radius: 0px;
+
+}
