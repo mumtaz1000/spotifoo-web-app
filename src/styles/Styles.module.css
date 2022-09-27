@@ -14,6 +14,15 @@
     --clr-greyLight: #a3a3a3;
     --clr-white: #fff;
     --clr-green: #1db954;
+    /* Font size */
+    --fs-h1: 48px;
+    --fs-h2: 24px;
+    --fs-h3: 16px;
+    --fs-p: 14px;
+    /* Font weight */
+    --fw-h1: 800;
+    --fw-h2: 700;
+    --fw-p: 400;
 }
 
 .Title,
@@ -25,49 +34,95 @@
 }
 
 .Title {
-    font-weight: 800;
-    font-size: 48px;
+    font-weight: var(--fw-h1);
+    font-size: var(--fs-h1);
     line-height: 58px;
 }
 
 .Heading {
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: var(--fw-h2);
+    font-size: var(--fs-h2);
     line-height: 29px;
 }
 
 .Subheading {
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: var(--fw-h2);
+    font-size: var(--fs-h3);
     line-height: 19px;
 }
 
 .Paragraph {
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: var(--fw-p);
+    font-size: var(--fs-p);
     line-height: 17px;
 }
 
 .Body {
     background-color: var(--clr-greyDarkest);
     color: var(--clr-white);
+    display: grid;
+    grid-template-areas: "navbar cards"
+        "navbar cards"
+        "foot foot";
+    width: 100%;
+    height: 720px;
+    grid-template-columns: 15% 85%;
 }
 
 .Navbar {
     background-color: var(--clr-black);
-    height: 720px;
-    width: 200px;
+    grid-area: navbar;
     left: 0px;
     top: 0px;
-    border-radius: 0px;
-
 }
 
 .NavbarLogo {
     height: 32px;
     width: 117.33333587646484px;
-    left: 32px;
-    top: 32px;
-    border-radius: 0px;
+    padding-top: 32px;
+    padding-left: 32px;
 
+}
+
+.NavbarLink{
+background-color: var(--clr-green);
+width: 90%;
+margin-left: auto;
+margin-right: auto;
+align-items: center;
+}
+
+.HomeLogo{
+    height: 21.34px;
+    width: 24px;
+    color: var(--clr-white);
+}
+
+.CardCollection {
+    grid-area: cards;
+    right: 0px;
+    background-color: var(--clr-greyDarkest);
+}
+
+.CardContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.Card {
+    position: relative;
+    background-color: var(--clr-green);
+    width: 224px;
+    height: 259px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.Footer {
+    grid-area: foot;
+    background-color: var(--clr-greyDark);
+    height: 96px;
+    margin-bottom: 0;
 }

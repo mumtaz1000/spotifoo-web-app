@@ -1,11 +1,15 @@
 import React from "react";
 import styles from "../styles/Styles.module.css";
+import CardCollection from "./CardCollection";
+import Footer from "./Footer";
 import NavigationBar from "./NavigationBar";
 
 export default function Body() {
   return (
-    <body className={styles.Body}>
+    <main className={styles.Body}>
       <NavigationBar />
-    </body>
+      <CardCollection />
+      <Footer />
+    </main>
   );
 }
