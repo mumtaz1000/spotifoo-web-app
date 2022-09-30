@@ -1,40 +1,18 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React from "react";
 import styles from "../styles/Styles.module.css";
-import Card from "./Card";
 
-export default function () {
-  const [data, setData] = useState(null);
-  let [pageNo, setPageNo] = useState(1);
-
-  const fetchRequiredData = () => {
-    axios
-      .get(`http://localhost:8080/music/?page=${pageNo}`)
-      .then((respones) => {
-        setData(respones.data);
-        console.log(data);
-      });
-  };
-
-  function handleChange() {
-    setPageNo((prevCount) => prevCount + 1);
-    fetchRequiredData();
-  }
-
-  function goBack() {
-    setPageNo((prevCount) => prevCount - 1);
-    fetchRequiredData();
-  }
-
-  useEffect(() => handleChange(), []);
+export default function CardCollection({ data }) {
+  console.log(data);
   return (
     <div className={styles.CardCollection}>
-      <button type="submit" onClick={goBack}>
-        <span>&#8810;</span>
-      </button>
-      <button type="submit" onClick={handleChange}>
-        <span>&#8811;</span>
-      </button>
+    <ul className={styles.CardContainer}>
+      {Object.entries(data).map(([key, value]) => (
+        <li key={key} className={styles.Card}>
+          <img src={value.pathToAlbum} className={styles.AlbumImage} />
+          <h3 style={{ marginLeft: "15px" }}>{value.title} </h3>
+        </li>
+      ))}
+    </ul>
     </div>
   );
 }
