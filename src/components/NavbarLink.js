@@ -6,8 +6,8 @@ import HomeLogo from "../assets/icons/home.svg";
 export default function NavbarLink() {
   return (
     <nav>
-      <img src={HomeLogo} className={styles.HomeLogo}/>
-      <h3 className={styles.Subheading}>Home</h3>
+      <img src={HomeLogo} className={styles.homeLogo} />
+      <h3 className={styles.subheading}>Home</h3>
     </nav>
   );
 }

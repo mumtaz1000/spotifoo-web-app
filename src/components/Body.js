@@ -6,7 +6,7 @@ import FetchData from "./FetchData";
 
 export default function Body() {
   return (
-    <main className={styles.Body}>
+    <main className={styles.body}>
       <NavigationBar />
       <FetchData />
       <Footer />

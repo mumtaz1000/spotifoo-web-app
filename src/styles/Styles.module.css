@@ -10,39 +10,39 @@
     margin: 0;
 }
 
-.Title,
-.Heading,
-.Subheading,
-.Paragraph {
+.title,
+.heading,
+.subheading,
+.paragraph {
     font-family: "LatoBlack";
     font-style: normal;
 }
 
-.Title {
+.title {
     font-weight: var(--fw-h1);
     font-size: var(--fs-h1);
     line-height: 58px;
 }
 
-.Heading {
+.heading {
     font-weight: var(--fw-h2);
     font-size: var(--fs-h2);
     line-height: 29px;
 }
 
-.Subheading {
+.subheading {
     font-weight: var(--fw-h2);
     font-size: var(--fs-h3);
     line-height: 19px;
 }
 
-.Paragraph {
+.paragraph {
     font-weight: var(--fw-p);
     font-size: var(--fs-p);
     line-height: 17px;
 }
 
-.Body {
+.body {
     background-color: var(--clr-greyDarkest);
     color: var(--clr-white);
     display: grid;
@@ -50,18 +50,17 @@
         "navbar cards"
         "foot foot";
     width: 100%;
-    height: 720px;
-    grid-template-columns: 15% 85%;
+    height: 700px;
 }
 
-.Navbar {
+.navbar {
     background-color: var(--clr-black);
     grid-area: navbar;
     left: 0px;
     top: 0px;
 }
 
-.NavbarLogo {
+.navbarLogo {
     height: 32px;
     width: 117.33333587646484px;
     padding-top: 32px;
@@ -69,7 +68,7 @@
 
 }
 
-.NavbarLink {
+.navbarLink {
     background-color: var(--clr-green);
     width: 90%;
     margin-left: auto;
@@ -77,26 +76,28 @@
     align-items: center;
 }
 
-.HomeLogo {
+.homeLogo {
     height: 21.34px;
     width: 24px;
     color: var(--clr-white);
 }
 
-.CardCollection {
+.cardContainer {
     grid-area: cards;
-    right: 0px;
-    background-color: var(--clr-greyDarkest);
+    margin: -16px;
 }
 
-.CardContainer {
+.cardCollection {
     display: flex;
+    right: 0px;
+    background-color: var(--clr-greyDarkest);
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
+
 }
 
-.Card {
+.card {
     position: relative;
     background-color: var(--clr-greyDark);
     width: 224px;
@@ -105,11 +106,15 @@
     margin: 20px;
 }
 
+.cardTitle {
+    margin-left: 15px;
+}
+
 ul {
     list-style: none;
 }
 
-.AlbumImage {
+.albumImage {
     width: 192px;
     height: 192px;
     display: block;
@@ -119,7 +124,7 @@ ul {
     margin-right: auto;
 }
 
-.Footer {
+.footer {
     grid-area: foot;
     background-color: var(--clr-greyDark);
     height: 96px;
