@@ -1,28 +1,13 @@
+@import "Colors.module.css";
+@import "FontWeight.module.css";
+@import "FontSize.module.css";
+
 *,
 *::befor,
 *::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-:root {
-    /* Colors */
-    --clr-black: #000;
-    --clr-greyDarkest: #121212;
-    --clr-greyDark: #242424;
-    --clr-greyLight: #a3a3a3;
-    --clr-white: #fff;
-    --clr-green: #1db954;
-    /* Font size */
-    --fs-h1: 48px;
-    --fs-h2: 24px;
-    --fs-h3: 16px;
-    --fs-p: 14px;
-    /* Font weight */
-    --fw-h1: 800;
-    --fw-h2: 700;
-    --fw-p: 400;
 }
 
 .Title,
@@ -84,15 +69,15 @@
 
 }
 
-.NavbarLink{
-background-color: var(--clr-green);
-width: 90%;
-margin-left: auto;
-margin-right: auto;
-align-items: center;
+.NavbarLink {
+    background-color: var(--clr-green);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
 
-.HomeLogo{
+.HomeLogo {
     height: 21.34px;
     width: 24px;
     color: var(--clr-white);
@@ -113,11 +98,25 @@ align-items: center;
 
 .Card {
     position: relative;
-    background-color: var(--clr-green);
+    background-color: var(--clr-greyDark);
     width: 224px;
     height: 259px;
     border-radius: 20px;
     margin: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+.AlbumImage {
+    width: 192px;
+    height: 192px;
+    display: block;
+    margin-top: 16px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .Footer {
