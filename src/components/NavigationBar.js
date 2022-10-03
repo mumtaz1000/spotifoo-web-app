@@ -9,7 +9,6 @@ export default function NavigationBar() {
       <img src={require("../assets/logo.png")} className={styles.navbarLogo} />
       <div className={styles.navbarLink}>
         <NavbarLink />
-        <h3 className={styles.subheading}>Search</h3>
       </div>
     </nav>
   );

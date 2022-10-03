@@ -1,9 +1,9 @@
 import React from 'react'
-import Body from "./components/Body"
+import Home from "./components/Home"
 
 export default function 
 () {
   return (
-    <Body />
+    <Home />
   )
 }
