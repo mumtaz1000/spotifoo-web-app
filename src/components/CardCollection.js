@@ -8,7 +8,7 @@ export default function CardCollection({ data }) {
     const audio = new Audio(path)
     audio.play();
   };
-  
+
 
   return (
     <ul className={styles.cardCollection}>
@@ -22,7 +22,7 @@ export default function CardCollection({ data }) {
             }}
           />
           <h3 className={styles.cardTitle}>{value.title} </h3>
-          <audio >
+          <audio controls>
             <source src={value.pathToMusic} 
             type="audio/mpeg"></source>
             </audio>

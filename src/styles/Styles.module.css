@@ -97,7 +97,7 @@
     width: 224px;
     height: 259px;
     border-radius: 20px;
-    margin: 20px;
+    margin: 35px;
 }
 
 .cardTitle {
@@ -141,4 +141,8 @@ ul {
     height: 96px;
     margin-bottom: 0;
     grid-column: 1/5;
+}
+
+audio{
+    width:96%;
 }
