@@ -63,7 +63,7 @@
 
 .navbarLogo {
     width: 117.33333587646484px;
-    padding:32px;
+    padding: 32px;
 }
 
 .navbarLink {
@@ -116,6 +116,24 @@ ul {
     border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.searchbarContainer {
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+
+}
+
+.searchbar {
+    border-radius: 0 20px 20px 0;
+    height: 30px;
+}
+
+.searchButton {
+    padding-top: 6px;
+    height: 21.34px;
+    width: 24px;
 }
 
 .footer {

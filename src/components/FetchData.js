@@ -22,6 +22,7 @@ export default function FetchData() {
   if (error) return <pre>{JSON.stringify(error)}</pre>;
   return (
     <div className={styles.cardContainer}>
+    <h1 className={styles.subTitle}>Artist</h1>
       {data && <CardCollection data={data} />}
     </div>
   );

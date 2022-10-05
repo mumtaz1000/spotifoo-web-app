@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CardCollection from "./CardCollection";
 import styles from "../styles/Styles.module.css";
+import SearchLogo from "../assets/icons/search.svg";
 
 export default function FetchSearchQuery() {
   const [data, setData] = useState(null);
@@ -22,12 +23,18 @@ export default function FetchSearchQuery() {
   if (error) return <pre>{JSON.stringify(error)}</pre>;
   return (
     <div className={styles.cardContainer}>
+      <h1 className={styles.subTitle}>Search</h1>
+      <span className={styles.searchContainer} >
+      <img src={SearchLogo} className={styles.searchButton} onClick={search}/>
       <input
         type="text"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
+        className={styles.searchbar}
       />
-      <button onClick={search}>Search</button>
+      </span>
+      
+        
       {data && <CardCollection data={data} />}
       <br />
     </div>
