@@ -46,7 +46,7 @@
     color: var(--clr-white);
     display: grid;
     grid-template-columns: 1fr 4fr auto;
-    grid-auto-rows: minmax(600px, auto);
+    min-height: 700px;
 }
 
 .navbar {
@@ -80,6 +80,7 @@
 
 .cardContainer {
     background-color: var(--clr-greyDarkest);
+    min-height: 100vh;
 }
 
 .cardCollection {
